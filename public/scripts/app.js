@@ -78,39 +78,3 @@ createBaseMap();
 fetchShops();
 
 });
-
-function newPokemonShop(e) {
-  var pokemonShop = $('#shopName').data('album-id');
-    console.log(pokemonShop);
-  var pokemonAddress = $('#shopAddress').val();
-  // var pokemonWebsite = $('#trackNumber').val();
-  // var pokemonPhoneNumber = $('#trackNumber').val();
-
-  var formData = {
-    name: shopName,
-    trackNumber: trackNumber
-  };
-
-  var postUrl = '/api/albums/' + albumId + '/songs';
-  console.log('posting to ', postUrl, ' with data ', formData);
-
-  $.post(postUrl, formData)
-    .success(function(song) {
-      console.log('song', song);
-
-      // re-get full album and render on page
-      $.get('/api/albums/' + albumId).success(function(album) {
-        //remove old entry
-        $('[data-album-id='+ albumId + ']').remove();
-        // render a replacement
-        renderAlbum(album);
-      });
-
-      //clear form
-      $('#songName').val('');
-      $('#trackNumber').val('');
-      $('#songModal').modal('hide');
-
-    });
-}
-

@@ -16,9 +16,14 @@ var pokemongym_list = [
     website: "http://kyle.com",
     phone: 3034332739,
 
-  }
+  },
+  {
+    name: "Pure Pressure",
+    address: "855 Wyandot Street, Denver, CO",
+    website: "http://kyle.com",
+    phone: 3034332739,
 
-  ];
+  }];
 
 db.Pokemon.remove({}, function(err, pokemons){
    if(err) {

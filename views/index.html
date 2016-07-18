@@ -22,8 +22,10 @@
   </head>
   <body>
    <nav>
-       <img src="images/pokemon_go.png" alt="Pokemon Go" padding="30" height="124" width="200">
-       <h1>Find Your Local Gym</h1>
+       <div class="go_image">
+          <img src="images/pokemon_go.png" alt="Pokemon Go" padding="30" height="75" width="127">
+          <h1>Find your local Gym</h1>
+       </div>
     </nav>
 
     <div class="col-md-14">
@@ -32,9 +34,6 @@
           <li><a href="#news">News</a></li>
           <li><a href="#Pokemon">Pokemon List</a></li>
           <li><a href="#about">About</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
     </ul>
     </div>
 
@@ -44,41 +43,34 @@
       </div>
 
     <div class="col-md-4">
-        
-        <legend>Add New Pokemon Shop</legend>
-            
-            <div class="form-group">
-              <label class="col-md-6 control-label" for="shopName">Pokemon Shop Name</label>
-              <input id="shopName" name="name" type="text" placeholder="Shop Name" class="form-control input-md" required="">
-            </div>
+          
+      <legend>Add New Pokemon Shop</legend>
+              
+      <div class="form-group">
+        <label class="col-md-6 control-label" for="shopName">Pokemon Shop Name</label>
+        <input id="shopName" name="name" type="text" placeholder="Shop Name" class="form-control input-md" required="">
+      </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-              <label class="col-md-6 control-label" for="shopAddress">Address</label>
-              <input id="textinput" name="shopAddress" type="text" placeholder="Address" class="form-control input-md"> 
-            </div>
+      <div class="form-group">
+        <label class="col-md-6 control-label" for="shopAddress">Address</label>
+        <input id="textinput" name="shopAddress" type="text" placeholder="Address" class="form-control input-md"> 
+      </div>
 
-            <!-- Text input-->
-    <div class="form-group">
-          <label class="col-md-6 control-label" for="releaseDate">Website</label>
-          <input id="releaseDate" name="releaseDate" type="text" placeholder="Website name" class="form-control input-md">
+      <div class="form-group">
+        <label class="col-md-6 control-label" for="releaseDate">Website</label>
+        <input id="releaseDate" name="releaseDate" type="text" placeholder="Website name" class="form-control input-md">
+      </div>
 
-     </div>
-
-    <div class="form-group">
-          <label class="col-md-6 control-label" for="releaseDate">Phone Number</label>
-          <input id="releaseDate" name="releaseDate" type="text" placeholder="Phone Number" class="form-control input-md">
+      <div class="form-group">
+        <label class="col-md-6 control-label" for="releaseDate">Phone Number</label>
+        <input id="releaseDate" name="releaseDate" type="text" placeholder="Phone Number" class="form-control input-md">
+      </div>
     </div>
-    
-    </div>
-    
     <div class="form-group">
-          <label class="col-md-4 control-label" for="singlebutton">Save Pokemon Shop</label>
-          <div class="col-md-4">
-              <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
-          </div>
+        <label class="col-md-4 control-label" for="singlebutton">Save Pokemon Shop</label>
+        <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+        </div>
     </div>
-
-
   </body>
 </html>
