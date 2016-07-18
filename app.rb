@@ -2,7 +2,7 @@ class Pokemon < Sinatra::Base
 
   # General route actions
   get '/' do
-  	"Hello World"
+  	send_file File.expand_path('index.html', settings.public_folder)
   end
 
 end
