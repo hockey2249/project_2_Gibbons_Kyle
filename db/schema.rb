@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160718211856) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "pokemon_gym", force: :cascade do |t|
+  create_table "pokemon_gyms", force: :cascade do |t|
     t.string   "name"
     t.string   "photo_url"
     t.string   "website"

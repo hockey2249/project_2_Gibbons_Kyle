@@ -1,6 +1,6 @@
 class CreatePokemonGym < ActiveRecord::Migration
   def change
-  	create_table :pokemon_gym do |t| #t stands for table
+  	create_table :pokemon_gyms do |t| #t stands for table
       t.string :name 
       t.string :photo_url 
       t.string :website 

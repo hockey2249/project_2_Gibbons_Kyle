@@ -21,5 +21,3 @@ Pokemon_gym.create({
     phone: 3034332739,
 
   })
-
-#
