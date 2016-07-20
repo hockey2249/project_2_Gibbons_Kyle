@@ -11,7 +11,7 @@ console.log(geocodedMarkers);
 function createBaseMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 39.7420, lng: -104.991531},
-    zoom: 11 
+    zoom: 11
   });
 }
 
@@ -37,7 +37,8 @@ function setMarker(shop) {
     .Marker({
       position: latLng,
       map: map,
-      title: shop.name
+      title: shop.name,
+      icon: '/images/pokemon_gym.png',
     });
 
   marker.infowindow = new google.maps.InfoWindow({

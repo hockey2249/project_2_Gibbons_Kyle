@@ -16,4 +16,12 @@ post '/index' do
 	redirect to('/home')
   end
 
+get '/pokemon-gym/:id' do
+    @pokemon = Pokemon.find(params[:id])
+    erb(:"pokemon/show")
 end
+
+
+end
+
+

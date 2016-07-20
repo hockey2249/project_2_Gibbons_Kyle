@@ -27,10 +27,9 @@
 
 <div class="col-md-14">
     <ul class="topnav">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/news">News</a></li>
+          <li><a href="/index">Home</a></li>
           <li><a href="/pokemon-list">Pokemon List</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/home">Pokemon Map</a></li>
           <li><a href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a></li>
           <li><a href="#myModal" role="button" data-toggle="modal">Add a New Pokemon</a></li>
     </ul>
@@ -46,8 +45,12 @@
             <form action="/index" method="post">
                 <label for="pokemon[name]">Name:</label>
                 <input name="pokemon[name]">
-                <label for="pokemon[address]">address:</label>
+                <label for="pokemon[address]">Address:</label>
                 <input name="pokemon[address]">
+                <label for="pokemon[website]">Website:</label>
+                <input name="pokemon[website]">
+                <label for="pokemon[phone_number]">Phone Number:</label>
+                <input name="pokemon[phone_number]">
                 <input type="submit" value="Create">
             </form>
           </div>
