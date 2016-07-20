@@ -1,4 +1,4 @@
-class Pokemon_gym < ActiveRecord::Base
+class Pokemon < ActiveRecord::Base
 
 
 end

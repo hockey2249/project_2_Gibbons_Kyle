@@ -4,6 +4,9 @@ Bundler.require
 
 # Models
 require './models/pokemon_gym'
-require './app'
 
-run Pokemon
+#Controllers
+require './app'
+require './controllers/pokemon_gym_controller'
+
+run PokemonGym

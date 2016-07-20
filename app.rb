@@ -1,8 +1,8 @@
-class Pokemon < Sinatra::Base
+class PokemonGym < Sinatra::Base
 
   # General route actions
-  get '/' do
-  	erb :home
+  get '/index' do
+    erb :index
   end
 
   get '/home' do
@@ -22,6 +22,6 @@ class Pokemon < Sinatra::Base
   end
 
   # RESTful Retrieve Pokemon List Controller Actions
-  # index
+  # inde
 
 end

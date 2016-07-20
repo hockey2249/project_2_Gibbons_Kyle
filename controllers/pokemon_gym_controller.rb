@@ -1,11 +1,19 @@
-class Pokemon < Sinatra::Base
+class PokemonGym < Sinatra::Base
+require 'json'
 
-  get '/pokemon_gym' do
-  	 get '/pokemon_gym' do
-     @pokemon_gyms = Pokemon_gym.all
-   	 erb(:"/home")
+  #Get all Pokemon list 
+
+get '/pokemon-gym' do
+     @pokemons = Pokemon.all.to_json
   end
 
+  #create pokemon pin to drop on the map 
+
+post '/index' do
+	pokemon = params[:pokemon]
+	new_pokemon = Pokemon.create(pokemon)	
+	p new_pokemon
+	redirect to('/home')
   end
 
 end

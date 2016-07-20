@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pokeman Go</title>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pokeman Go</title>
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/styles/styles.css">
 
     <!-- VENDOR SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   
     <!-- Google Maps API -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
 
     <!-- APPLICATION SCRIPTS -->
-    <script src="/scripts/app.js" class="image"></script>
-  </head>
-  <body>
-   <header>
-   <nav>
-       <div class="go_image">
-          <img src="images/pokemon_go.png" alt="Pokemon Go" padding="30" height="75" width="127">
-          <h1>Find your local Gym</h1>
-       </div>
-    </nav>
+<script src="/scripts/app.js" class="image"></script>
+</head>
+<body>
+<header>
 
-    <div class="col-md-14">
+<div class="col-md-14">
     <ul class="topnav">
           <li><a href="/home">Home</a></li>
           <li><a href="/news">News</a></li>
           <li><a href="/pokemon-list">Pokemon List</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Add a New Pokemon</a></li>
     </ul>
-    </div>
-    </header>
-    
-    <main>
-      <%= yield %>
-    </main>
+</div>
 
-   <footer class="col-md-12">
-    &copy; Pokemon
-  </footer>
-  </body>
+<div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add A Pokemon Gym</h4>
+          <div class="modal-body">
+            <form action="/index" method="post">
+                <label for="pokemon[name]">Name:</label>
+                <input name="pokemon[name]">
+                <label for="pokemon[address]">address:</label>
+                <input name="pokemon[address]">
+                <input type="submit" value="Create">
+            </form>
+          </div>
+          </div> 
+        </div> 
+      </div>
+</div>    
+
+<div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add A Pokemon</h4>
+          <div class="modal-body">
+            <form action="/index" method="post">
+                <label for="pokemon[name]">Name:</label>
+                <input name="pokemon[name]">
+                <label for="pokemon[address]">address:</label>
+                <input name="pokemon[address]">
+                <input type="submit" value="Create">
+            </form>
+          </div>
+          </div> 
+        </div> 
+      </div>
+</div>    
+
+</header>
+
+<main>
+    <%= yield %>
+</main>
+
+<!-- Scripts -->
+    <!-- jQuery CDN -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Bootstrap JS CDN--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
 </html>

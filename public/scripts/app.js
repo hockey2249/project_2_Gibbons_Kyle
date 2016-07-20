@@ -7,6 +7,7 @@ var apiKey = 'AIzaSyDf0KFq6P4NfjzPmkHlEVuExuuX1Ox_PP4';
 var geocodedMarkers = [];
 var map;
 
+console.log(geocodedMarkers);
 function createBaseMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 39.7420, lng: -104.991531},
@@ -50,29 +51,27 @@ function setMarker(shop) {
   });
 }
 
-function geocodeShops(shops) {
+function geocodeShops(shopsString) {
+  var shops = JSON.parse(shopsString);
   if (shops.length) {
     shops.forEach(function(shop) {
       var geocodeUrl = buildGeocodingUrl(shop.address);
       $.ajax({
         url: geocodeUrl,
-	success: function(data) {
-	  var result = data.results[0];
+success: function(data) {
+ var result = data.results[0];
           if (result) {
             shop.lat = result.geometry.location.lat;
-	    shop.lng = result.geometry.location.lng;
-	    setMarker(shop);
-	  }
-	}
+   shop.lng = result.geometry.location.lng;
+   setMarker(shop);
+ }
+}
       });
     });
   }
 }
 function fetchShops() {
-  $.ajax({
-    url: '/api/shops/',
-    success: geocodeShops 
-  });
+  $.get('pokemon-gym', geocodeShops);
 }
 createBaseMap();
 fetchShops();

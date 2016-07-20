@@ -1,23 +1,14 @@
 require './models/pokemon_gym'
 
-Pokemon_gym.create({
-    name: "Pokemon Gym: Denver Beer Co.",
-    address: "1695 Platte St, Denver, CO 80202",
-    website: "http://denverbeerco.com/",
-    phone: 3034332739,
-
-  })
-Pokemon_gym.create({
-    name: "Kyle and Kevin's Local Gym",
-    address: "429 Acoma Street, Denver C0",
-    website: "http://kyle.com",
-    phone: 3034332739,
-
-  })
-Pokemon_gym.create({
-    name: "Pure Pressure",
-    address: "855 Wyandot Street, Denver, CO",
-    website: "http://kyle.com",
-    phone: 3034332739,
-
-  })
+Pokemon.create({
+    name: "Pokemon Gym: Union Station",
+    address: "1701 Wynkoop St, Denver, CO 80202",
+    phone_number: "3034332739",
+    website: "www.unionstation.com"
+    })
+Pokemon.create({
+    name: "Pokemon Gym: Union Station",
+    address: "1720 Wynkoop St, Denver, CO 80202",
+    phone_number: "3034332739",
+    website: "www.unionstation.com"
+    })

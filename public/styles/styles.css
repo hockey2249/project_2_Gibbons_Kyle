@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: blue; /*
+  background: aqua; /*
   background: -webkit-linear-gradient(blue, Aqua ); 
   background: -o-linear-gradient(blue, Aqua );
   background: -moz-linear-gradient(blue, Aqua ); 
@@ -18,7 +18,7 @@ h1 {
   color: italic blue;
 }
 #map {
-  height: 450px;
+  height: 600px;
   width: 100%;
   border: 4px solid white;
 }
@@ -28,12 +28,26 @@ h1 {
 .go_image{
   text-align: center;
 }
+input{
+  display: block;
+  margin: auto;
+}
+label{
+  text-align: center;
+  display: block;
+}
 nav{
   width: 100%;
   background: white;
   border: 1px solid black;
   border-right: none;
 }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
   list-style-type: none;
