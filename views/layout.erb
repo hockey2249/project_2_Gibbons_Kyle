@@ -32,7 +32,6 @@
           <li><a href="/map">Pokemon Map</a></li>
           <li><a href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a></li>
           <li><a href="#myModal1" role="button" data-toggle="modal">Add a New Pokemon</a></li>
-          <li><a href="#myModal2" role="button" data-toggle="modal">Update a New Pokemon</a></li>
     </ul>
     </ul>
 </div>
@@ -44,7 +43,7 @@
              <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Add A Pokemon Gym</h4>
           <div class="modal-body">
-            <form action="/index" method="post">
+            <form action="/pokemons" method="post">
                 <label for="pokemon[name]">Name:</label>
                 <input name="pokemon[name]">
                 <label for="pokemon[address]">Address:</label>
@@ -68,11 +67,13 @@
              <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Add A Pokemon</h4>
           <div class="modal-body">
-            <form action="/map" method="post">
-                <label for="pokemon[name]">Name:</label>
-                <input name="pokemon[name]">
-                <label for="pokemon[address]">address:</label>
-                <input name="pokemon[address]">
+            <form action="/pokemonads" method="post">
+                <label for="pokemonad[pokemon_name]">Pokemon Name:</label>
+                <input name="pokemonad[pokemon_name]">
+                <label for="pokemonad[photo_url]">Add Pokemon Image:</label>
+                <input name="pokemonad[photo_url]">
+                <label for="pokemonad[address]">Add Address:</label>
+                <input name="pokemonad[address]">
                 <input type="submit" value="Create">
             </form>
           </div>
@@ -80,31 +81,7 @@
         </div> 
       </div>
 </div> 
-<div id="myModal2" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Update Your Pokemon</h4>
-          <div class="modal-body">
-            <form action="/map" method="post">
-                <label for="pokemon[name]">Name:</label>
-                <input name="pokemon[name]">
-                <label for="pokemon[address]">Address:</label>
-                <input name="pokemon[address]">
-                <label for="pokemon[website]">Website:</label>
-                <input name="pokemon[website]">
-                <label for="pokemon[phone_number]">Phone Number:</label>
-                <input name="pokemon[phone_number]">
-            </form>
-          </div>
-          </div> 
-        </div> 
-      </div>
-</div> 
 </div>  
-   
-
 </header>
 
 <main>
@@ -115,7 +92,8 @@
     <!-- jQuery CDN -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Bootstrap JS CDN--> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

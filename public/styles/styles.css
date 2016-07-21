@@ -7,6 +7,13 @@ body {
 footer{
   text-align: center;
 }
+li{
+  font-size: 14px;
+}
+.pokemon-img {
+  height: 100px;
+  width: 100px;
+}
 h1 {
   text-align: center;
   font-size: 18px;
@@ -73,6 +80,35 @@ ul.topnav {
 #text{
   padding-left: 100px;
 }
+#deletebutton {
+  color: white;
+  background-color: #008CBA;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 12px;
+  font-size: 30px;
+  float: right;
+  margin-right: 60px;
+}
+#deletebutton:hover {
+  color: #FFF;
+  background: #900;
+}
+#updatebutton {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 12px;
+  font-size: 20px;
+  float: right;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+#updatebutton:hover {
+  color: #FFF;
+  background: #008CBA;
+}
 
 
 /* Float the list items side by side */
@@ -88,7 +124,7 @@ ul.topnav li a {
     transition: 0.3s;
     font-size: 17px;
 }
-#btn-danger {
+#btn-danger{
   font-size: 32px;
   text-align: center;
   color: red;
