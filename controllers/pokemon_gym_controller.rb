@@ -1,27 +1,28 @@
-class PokemonGym < Sinatra::Base
-require 'json'
+# class PokemonGym < Sinatra::Base
+# require 'json'
 
-  #Get all Pokemon list 
+# set :method_override, true
 
-get '/pokemon-gym' do
-     @pokemons = Pokemon.all.to_json
-  end
+#   #Get all Pokemon list 
 
-  #create pokemon pin to drop on the map 
+# get '/pokemon-gym' do
+#      @pokemons = Pokemon.all.to_json 
 
-post '/index' do
-	pokemon = params[:pokemon]
-	new_pokemon = Pokemon.create(pokemon)	
-	p new_pokemon
-	redirect to('/home')
-  end
+# end
 
-get '/pokemon-gym/:id' do
-    @pokemon = Pokemon.find(params[:id])
-    erb(:"pokemon/show")
-end
+#   #create pokemon pin to drop on the map 
+
+# post '/index' do
+#   pokemon = params[:pokemon]
+#   new_pokemon = Pokemon.create(pokemon) 
+#   p new_pokemon
+#   redirect to('/home')
+# end
+
+# get '/pokemon-gym/:id' do
+#     @pokemon = Pokemon.find(params[:id])
+#     erb(:"pokemon/show")
+# end
 
 
-end
-
-
+# end

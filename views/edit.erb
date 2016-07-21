@@ -1,0 +1,14 @@
+<form action='/pokemons/<%= "#{@pokemon.id}" %>' method="post">
+     <input name="_method" type="hidden" value="PUT" /> 
+
+      <label for="pokemon[name]">Name:</label>
+      <input name="pokemon[name]" value='<%= "#{@pokemon.name}" %>'>
+
+      <label for="pokemon[address]">Address:</label>
+      <input name="pokemon[address]" value='<%= "#{@pokemon.address}" %>'>
+
+      <label for="pokemon[website]">Website:</label>
+      <input name="pokemon[website]" value='<%= "#{@pokemon.website}" %>'>
+
+<input type="submit" value="Update">
+</form>

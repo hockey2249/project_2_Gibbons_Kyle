@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Pokeman Go</title>
-
-    <!-- STYLESHEETS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="/styles/styles.css">
-
-    <!-- VENDOR SCRIPTS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  
-    <!-- Google Maps API -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
-
-    <!-- APPLICATION SCRIPTS -->
-<script src="/scripts/app.js" class="image"></script>
-</head>
-<body>
-<header>
-
-<div class="col-md-14">
-    <ul class="topnav">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/pokemon-list">Pokemon List</a></li>
-          <li><a href="/map">Pokemon Map</a></li>
-          <li><a href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a></li>
-          <li><a href="#myModal1" role="button" data-toggle="modal">Add a New Pokemon</a></li>
-          <li><a href="#myModal2" role="button" data-toggle="modal">Update a New Pokemon</a></li>
-    </ul>
-    </ul>
-</div>
 
 <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-md">
@@ -96,6 +58,7 @@
                 <input name="pokemon[website]">
                 <label for="pokemon[phone_number]">Phone Number:</label>
                 <input name="pokemon[phone_number]">
+                <input type="submit" value="Create">
             </form>
           </div>
           </div> 
@@ -103,19 +66,3 @@
       </div>
 </div> 
 </div>  
-   
-
-</header>
-
-<main>
-    <%= yield %>
-</main>
-
-<!-- Scripts -->
-    <!-- jQuery CDN -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- Bootstrap JS CDN--> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
-
-</html>

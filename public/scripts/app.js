@@ -6,8 +6,19 @@ var keyConjunction = '&key=';
 var apiKey = 'AIzaSyDf0KFq6P4NfjzPmkHlEVuExuuX1Ox_PP4';
 var geocodedMarkers = [];
 var map;
+var shops;
 
-console.log(geocodedMarkers);
+$("#button-delete").on('click', function(){
+$.ajax({
+    url: '/delete',
+    type: 'DELETE',
+    success: function(result) {
+    }
+});
+
+  alert('Worked');
+});
+
 function createBaseMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 39.7420, lng: -104.991531},
@@ -44,10 +55,10 @@ function setMarker(shop) {
   marker.infowindow = new google.maps.InfoWindow({
     content: formatInfoWindow(shop) 
   });
-  marker.addListener('click', function() {
+  marker.addListener('mouseover', function() {
    marker.infowindow.open(map, marker);
   });
-  marker.addListener('clickout', function() {
+  marker.addListener('mouseout', function() {
    marker.infowindow.close();
   });
 }
@@ -76,5 +87,7 @@ function fetchShops() {
 }
 createBaseMap();
 fetchShops();
-
 });
+
+
+
