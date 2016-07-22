@@ -63,8 +63,7 @@ function setMarker(shop) {
 function kyleInfoWindow(data) {
   var name = '<h3>' + data.pokemon_name + '</h3>';
   var address = '<p>' + data.address + '</p>';
-  var image = '<img src= "' + data.photo_url + '">';
-  console.log(image);
+  var image = '<img src= "' + data.photo_url + '" class="pokemon-img">';
   return name + address + image;
 }
 
@@ -125,15 +124,12 @@ function pokeshops(pokeshops) {
               data.lat = result.geometry.location.lat;
               data.lng = result.geometry.location.lng;
 
-
             setpokeMarker(data);
           }
         }
       });
     });
   }
-          console.log(pokemonshops);
-          console.log(pokemonshops);
 }
 function fetchShops() {
   $.get('pokemon-gym', geocodeShops);

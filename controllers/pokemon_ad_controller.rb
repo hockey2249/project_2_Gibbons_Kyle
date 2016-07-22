@@ -1,6 +1,7 @@
 class PokemonGym < Sinatra::Base
 
 require 'json'
+set :method_override, true
 
 get '/pokemon-ad' do
   @pokemonads = Pokemonad.all.to_json 
@@ -17,5 +18,4 @@ post '/pokemonads' do
   p new_pokemonad
   redirect to('/map')
 end
-
 end

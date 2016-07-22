@@ -10,9 +10,13 @@
               <div class="row">
                 <div class="span3" id="image"><img src="/images/pokemon_go.png" alt="Pokemon Go Image" height="100" width="200">
                   </div>
-            	    	<li>Pokemon Gym Name: <%= pokemon[:name] %></li>
-            	    	<li>Address: <%= pokemon[:address] %></li>
-            	    	<li>Website: <%= pokemon[:website] %></li>
+                  <div class="pokemonlist">
+                    <ul>
+                      <li>Pokemon Gym Name: <%= pokemon[:name] %></li>
+                      <li>Address: <%= pokemon[:address] %></li>
+                      <li>Website: <%= pokemon[:website] %></li>
+                    </ul>
+                  </div>
                   <button class="deletebutton delete-pokemon" id="deletebutton" type="button" data-pokemon-id="<%=pokemon.id %>">Delete
                   </button>
                   
