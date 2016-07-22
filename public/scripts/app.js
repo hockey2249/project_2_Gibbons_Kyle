@@ -63,7 +63,7 @@ function setMarker(shop) {
 function kyleInfoWindow(data) {
   var name = '<h3>' + data.pokemon_name + '</h3>';
   var address = '<p>' + data.address + '</p>';
-  var image = '<img src= data.photo_url'>
+  var image = '<img src= "' + data.photo_url + '">';
   console.log(image);
   return name + address + image;
 }
@@ -132,8 +132,8 @@ function pokeshops(pokeshops) {
       });
     });
   }
-              // console.log(pokemonshops);
-          // console.log(pokemonshops);
+          console.log(pokemonshops);
+          console.log(pokemonshops);
 }
 function fetchShops() {
   $.get('pokemon-gym', geocodeShops);
