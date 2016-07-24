@@ -24,17 +24,31 @@
 </head>
 <body>
 <header>
-
-<div class="col-md-14">
-    <ul class="topnav">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/pokemon-list">Pokemon List</a></li>
-          <li><a href="/map">Pokemon Map</a></li>
-          <li><a href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a></li>
-          <li><a href="#myModal1" role="button" data-toggle="modal">Add a New Pokemon</a></li>
-    </ul>
-</div>
-
+<nav class="navbar navbar-light bg-faded" id="navbar">
+  <a class="navbar-brand"><img src="/images/pokemon.png" height="40" width="125"></a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/pokemon-list">Pokemon List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/map">Pokemon Map</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#myModal" role="button" data-toggle="modal">Add New Pokemon Shop</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#myModal1" role="button" data-toggle="modal">Add a New Pokemon</a>
+    </li>
+  </ul>
+  <form class="form-inline pull-xs-right">
+    <input class="form-control" type="text" placeholder="Search">
+    <button class="btn btn-success-outline" type="submit">Search</button>
+     <a class="navbar-brand" href="https://github.com/hockey2249/project_2_Gibbons_Kyle" id="github"><img src="http://pritishc.com/images/social/github.png" height="40" width="40"></a>
+  </form>
+</nav>
 <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-md">
         <div class="modal-content">

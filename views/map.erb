@@ -17,12 +17,13 @@
                       <li>Website: <%= pokemon[:website] %></li>
                     </ul>
                   </div>
-                  <button class="deletebutton delete-pokemon" id="deletebutton" type="button" data-pokemon-id="<%=pokemon.id %>">Delete
-                  </button>
-                  
-                  <a href="/pokemons/ <%= pokemon.id %>/edit" method='get'>
-                    <button class="btn btn-danger btn-lg" id="updatebutton">Edit</button>
-                  </a> 
+                  <div class="buttons">
+                    <button class="deletebutton delete-pokemon" id="deletebutton" type="button" data-pokemon-id="<%=pokemon.id %>">Delete
+                    </button>
+                    <a href="/pokemons/ <%= pokemon.id %>/edit" method='get'>
+                      <button class="btn btn-danger btn-lg" id="updatebutton">Edit</button>
+                    </a> 
+                  </div>
                </div>
           </div>
        </div>

@@ -11,14 +11,44 @@ footer{
   font-size: 20px;
   padding-left: 300px;
 }
+#pokemongo{
+  margin-bottom: 50px;
+}
 .pokemon-img {
   height: 150px;
   width: 200px;
+}
+#block{
+    background-color: #396490;
+    opacity: 0.8;
+    border: solid black 2px;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#block2{
+    background-color: #396490;
+    opacity: 0.8;
+    border: solid black 2px;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+#pokemonimage{
+  margin-top: 180px;
 }
 h1 {
   text-align: center;
   font-size: 18px;
   color: italic blue;
+}
+#github{
+  float: right;
+  padding-top: 0px;
+}
+#github:hover { 
+    background-color: #17434c;
 }
 #map {
   height: 600px;
@@ -59,6 +89,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 .topnav{
   opacity: 0.75;
@@ -71,8 +102,14 @@ ul.topnav {
   background-color: #333;
 }
 #rows_pokemon{
+  width: 90%;
+  margin: auto;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.6;
+  border: solid black;
+}
+.buttons{
+  margin-top: -80px;
 }
 .span3{
   float:left;
@@ -121,7 +158,20 @@ ul.topnav {
 #pokemon_list{
   background-color: white;
 }
-
+.navbar{
+  background-color: #17334c;
+  color:white;
+}
+.form-inline{
+  float: right;
+  padding-top: 10px;
+}
+#carousel-example-generic{
+  margin-top: 50px;
+}
+.nav-link{
+  font-size: 18px;
+}
 ul.topnav li {float: right;
 }
 
