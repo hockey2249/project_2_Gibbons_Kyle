@@ -23,25 +23,57 @@ footer{
     opacity: 0.8;
     border: solid black 2px;
     width: 90%;
-    height: 600px;
+    height: 500px;
     margin: auto;
     margin-bottom: 50px;
+}
+#whiteone{  
+    border: white solid;
+    height: 80%;
+    background-color: #445db3;
+    margin: 55px;
+
+}
+#whitethree{  
+    border: white solid;
+    height: 80%;
+    background-color: #445db3;
+    margin: 55px;
+
+}
+#whitetwo{  
+    border: white solid;
+    height: 80%;
+    background-color: #445db3;
+    margin: 55px;
+
 }
 #block2{
     background-color: #396490;
     opacity: 0.8;
     border: solid black 2px;
     width: 90%;
-    height: 600px;
+    height: 500px;
     margin: auto;
 }
 #pokemonimage{
-  margin-top: 180px;
+  margin-top: 120px;
+}
+#pokemonimg{
+  margin: 60px;
+}
+#pokemonimg2{
+  margin-right: 50px;
+  margin-top: 50px;
+}
+#pokemonimg3{
+  margin-right: 50px;
+  margin-top: 70px;
 }
 h1 {
   text-align: center;
   font-size: 18px;
-  color: italic blue;
+  color: white;
 }
 #github{
   float: right;
