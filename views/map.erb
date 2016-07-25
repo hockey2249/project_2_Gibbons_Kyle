@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="row_map">
   	<div class="col-lg-12">
       <div id="map"></div>	
     </div>
@@ -10,11 +10,11 @@
               <div class="row">
                 <div class="span3" id="image"><img src="/images/pokemon_go.png" alt="Pokemon Go Image" height="100" width="200">
                   </div>
-                  <div class="pokemonlist">
+                  <div>
                     <ul>
-                      <li>Pokemon Gym Name: <%= pokemon[:name] %></li>
-                      <li>Address: <%= pokemon[:address] %></li>
-                      <li>Website: <%= pokemon[:website] %></li>
+                      <li class="pokemongymlist">Pokemon Gym Name: <%= pokemon[:name] %></li>
+                      <li class="pokemongymlist">Address: <%= pokemon[:address] %></li>
+                      <li class="pokemongymlist">Website: <%= pokemon[:website] %></li>
                     </ul>
                   </div>
                   <div class="buttons">

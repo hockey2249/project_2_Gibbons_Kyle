@@ -3,16 +3,15 @@ body {
   background: #6390F0; 
   background-size: cover;
 }
-li{
+#footerlist{
   display: inline-block;
   padding-right: 25px;
   font-size: 16px;
   float: right;
   padding-top: -30px;
+  list-style: none;
 }
-#footerlist{
 
-}
 footer{
   text-align: center;
   height: 75px;
@@ -25,17 +24,15 @@ footer{
   padding-top: 30px;
   background-size: cover;
   padding-bottom: 60px;
+  height: 59em;
 } 
+
 .item{
-  margin-top: 30px;
+  margin-top: 100px;
 }
 #buttonhomepage{
   padding: 20px;
   text-align: center;
-}
-#pokemonlist{
-  font-size: 20px;
-  padding-left: 300px;
 }
 #pokemongo{
   margin-bottom: 50px;
@@ -59,6 +56,10 @@ footer{
     background-color: #445db3;
     margin: 55px;
 
+}
+.navbar-github{
+  margin-top: 10px;
+  padding-right: 10px; 
 }
 #whiteone:hover{
   background-color: yellow;
@@ -88,8 +89,22 @@ footer{
     opacity: 0.8;
     border: solid black 2px;
     width: 97%;
-    height: 500px;
+    height: 600px;
     margin: auto;
+}
+.fancy{
+  font-size: 24px;
+}
+#block3{
+    background: url("http://victordeleonchi.com/wp-content/uploads/2015/09/pokemon-go-batalla.png") no-repeat fixed center; 
+    background: solid black 4px;
+    background-color: #396490;
+    opacity: 0.7;
+    border: solid black 2px;
+    width: 97%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
 }
 #pokemonimage{
   margin-top: 120px;
@@ -126,8 +141,9 @@ h1 {
 hr{
   color: black solid;
 }
-.row{
-  padding: 30px;
+#row_map{
+  padding: 50px;
+  margin-top: 70px;
 }
 .pokemonlist{
   font-size: 20px;
@@ -137,10 +153,9 @@ hr{
 }
 .nav{
   padding-left: 40px;
-  margin-top: 10px;
 }
 ul{
-  padding-top: 25px;
+  padding-top: 15px;
   padding-right: 5px;
 }
 input{
@@ -173,14 +188,16 @@ ul.topnav {
   background-color: #333;
 }
 #rows_pokemon{
-  width: 90%;
+  width: 97%;
   margin: auto;
   background-color: white;
   opacity: 0.6;
   border: solid black;
+  height: 20em;
 }
 .buttons{
-  margin-top: -80px;
+  margin-left: 400px;
+  margin-top: -100px;
 }
 .span3{
   float:left;
@@ -193,7 +210,8 @@ ul.topnav {
   padding-right: 30px;
 }
 #image{
-  padding-top: 25px;
+  padding-top: 80px;
+  padding-left: 80px;
 }
 #text{
   padding-left: 100px;
@@ -235,8 +253,20 @@ ul.topnav {
 #carousel-example-generic{
   margin-top: -20px;
 }
-#pokemon_list{
-  background-color: white;
+.pokemon_list{
+  margin-top: 100px;
+}
+.row_map{
+  margin-top: 100px;
+}
+.pokemongymlist{
+  padding-left: 500px;
+  list-style: none;
+  margin-top: 40px;
+  font-size: 18px;
+}
+.row{
+  margin: auto;
 }
 .navbar{
   background-color: #17334c;

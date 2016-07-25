@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon'/ >
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pokeman Go</title>
@@ -13,10 +14,10 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-light bg-faded" id="navbar">
+<nav class="navbar navbar-default navbar-fixed-top">
   <a class="navbar-brand"><img src="/images/pokemon.png" height="40" width="125"></a>
   <ul class="nav navbar-nav">
-    <li class="nav-item active">
+    <li class="nav-item">
       <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
@@ -33,11 +34,7 @@
     </li>
   </ul>
   <a href="/admin" id="admin">Admin Login</a>
-  <form class="form-inline pull-xs-right">
-    <input class="form-control" type="text" placeholder="Search">
-    <button class="btn btn-success-outline" type="submit">Search</button>
-     <a class="navbar-brand" href="https://github.com/hockey2249/project_2_Gibbons_Kyle" id="github" target="_blank"><img src="http://pritishc.com/images/social/github.png" height="40" width="40"></a>
-  </form>
+  <a class="navbar-github" href="https://github.com/hockey2249/project_2_Gibbons_Kyle" id="github" target="_blank"><img src="http://pritishc.com/images/social/github.png" height="40" width="40"></a>
 </nav>
 
 <div id="myModal" class="modal fade" role="dialog">
@@ -94,12 +91,12 @@
     <!-- Bootstrap JS CDN--> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <footer>
-  <ul id="footerlist">
+<!--   <ul id="footerlist">
     <a href="#"><li>About</li>
     <a href="#"><li>Careers</li>
     <a href="/map"><li>Pokemon Map</li>
     <a href="/pokemon-list"><li>Pokemon List</li>
-  </ul>
+  </ul> -->
 </footer>
 </body>
 </html>
