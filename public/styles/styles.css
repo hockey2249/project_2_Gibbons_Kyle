@@ -265,6 +265,10 @@ ul.topnav {
   margin-top: 40px;
   font-size: 18px;
 }
+.container-fluid{
+  margin-top: 200px;
+  padding-bottom: 370px;
+}
 .row{
   margin: auto;
 }
