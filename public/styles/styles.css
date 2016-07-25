@@ -2,6 +2,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background: #6390F0; 
   background-size: cover;
+}
+li{
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 16px;
+  float: right;
+  padding-top: -30px;
+}
+#footerlist{
 
 }
 footer{
@@ -51,6 +60,15 @@ footer{
     margin: 55px;
 
 }
+#whiteone:hover{
+  background-color: yellow;
+}
+#whitetwo:hover{
+  background-color: yellow;
+}
+#whitethree:hover{
+  background-color: yellow;
+}
 #whitethree{  
     border: white solid;
     height: 80%;
@@ -80,11 +98,11 @@ footer{
   margin: 60px;
 }
 #pokemonimg2{
-  margin-right: 50px;
-  margin-top: 50px;
+  margin-right: 70px;
+  margin-top: 60px;
 }
 #pokemonimg3{
-  margin-right: 50px;
+  margin-right: 70px;
   margin-top: 70px;
 }
 h1 {
@@ -117,9 +135,13 @@ hr{
 .go_image{
   text-align: center;
 }
+.nav{
+  padding-left: 40px;
+  margin-top: 10px;
+}
 ul{
-  padding-top: 40px;
-  padding-left: 300px;
+  padding-top: 25px;
+  padding-right: 5px;
 }
 input{
   display: block;
@@ -226,30 +248,5 @@ ul.topnav {
   padding-top: 10px;
 }
 .nav-link{
-  font-size: 18px;
-}
-ul.topnav li {
-  float: right;
-}
-
-ul.topnav li a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-#btn-danger{
-  font-size: 32px;
-  text-align: center;
-  color: red;
-}
-
-ul.topnav li a:hover {
-  background-color: #111;
-}
-
-ul.topnav li.icon {
-  display: none;
+  font-size: 16px;
 }
