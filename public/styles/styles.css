@@ -6,7 +6,23 @@ body {
 }
 footer{
   text-align: center;
-  height: 100px;
+  height: 75px;
+  background-color: #17334c;
+  margin-top: 30px;
+}
+.hero-unit{
+  background: url("https://upload.wikimedia.org/wikipedia/commons/7/73/Wheat_fields_in_Ukraine-5966-98.jpg");
+/*  opacity: 0.75;*/
+  padding-top: 30px;
+  background-size: cover;
+  padding-bottom: 60px;
+} 
+.item{
+  margin-top: 30px;
+}
+#buttonhomepage{
+  padding: 20px;
+  text-align: center;
 }
 #pokemonlist{
   font-size: 20px;
@@ -23,7 +39,7 @@ footer{
     background-color: #396490;
     opacity: 0.8;
     border: solid black 2px;
-    width: 90%;
+    width: 97%;
     height: 500px;
     margin: auto;
     margin-bottom: 50px;
@@ -53,7 +69,7 @@ footer{
     background-color: #396490;
     opacity: 0.8;
     border: solid black 2px;
-    width: 90%;
+    width: 97%;
     height: 500px;
     margin: auto;
 }
@@ -188,31 +204,32 @@ ul.topnav {
   color: #FFF;
   background: #008CBA;
 }
+#carousel-example-generic{
+  margin-top: -20px;
+}
 #pokemon_list{
   background-color: white;
 }
 .navbar{
   background-color: #17334c;
   color:white;
+  opacity: .8;
 }
 .form-inline{
   float: right;
   padding-top: 10px;
 }
-#carousel-example-generic{
-  margin-top: 50px;
-}
 .nav-link{
   font-size: 18px;
 }
-ul.topnav li {float: right;
+ul.topnav li {
+  float: right;
 }
 
 ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
