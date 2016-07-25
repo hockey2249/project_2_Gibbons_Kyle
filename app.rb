@@ -20,4 +20,7 @@ get '/about' do
   erb :about
 end
 
+get '/admin' do 
+	erb :admin
+end
 end

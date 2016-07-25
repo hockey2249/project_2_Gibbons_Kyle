@@ -190,6 +190,12 @@ ul.topnav {
   color: #FFF;
   background: #900;
 }
+#admin{
+  float: right;
+  padding-top: 20px;
+  padding-right: 15px;
+  font-size: 18px;
+}
 #updatebutton {
   color: white;
   background-color: red;
