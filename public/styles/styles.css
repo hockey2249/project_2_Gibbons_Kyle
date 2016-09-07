@@ -89,7 +89,7 @@ footer{
     opacity: 0.8;
     border: solid black 2px;
     width: 97%;
-    height: 600px;
+    min-height: 50em;
     margin: auto;
 }
 .fancy{
