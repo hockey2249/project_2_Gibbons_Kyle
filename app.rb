@@ -3,7 +3,7 @@ set :method_override, true
 
 require 'json'
 
-get '/index' do
+get '/' do
   erb :index
 end
 

@@ -67,6 +67,14 @@ function kyleInfoWindow(data) {
   return name + address + image;
 }
 
+// function kyleInfoWindow(data) {
+//   var name = '<h3><a href="/pokemon_descriptions/' + data.pokemon_name + '">' + data.pokemon_name + '</a></h3>';
+//   var address = '<p>' + data.address + '</p>';
+//   var image = '<img src= "' + data.photo_url + '" class="pokemon-img">';
+//   return name + address + image;
+// }
+
+
 function setpokeMarker(data) {
   var latLng = {
     lat: data.lat,

@@ -3,19 +3,18 @@ class PokemonGym < Sinatra::Base
 require 'json'
 set :method_override, true
 
-get '/pokemon-ad' do
-  @pokemonads = Pokemonad.all.to_json 
+	get '/pokemonad' do
+  		@pokemonads = Pokemonad.all.to_json 
 	end
 
-get '/pokemonads/:id' do
-    @pokemonads = Pokemonad.find(params[:id])
-    erb(:"/pokemon_ad/show")
-end
+	get '/pokemonads/:id' do
+   		@pokemonads = Pokemonad.find(params[:id])
+   		erb(:"/pokemon_ad/show")
+	end
 
-post '/pokemonads' do
-  pokemonads = params[:pokemonad]
-  new_pokemonad = Pokemonad.create(pokemonads) 
-  p new_pokemonad
-  redirect to('/map')
-end
+	post '/pokemonads' do
+ 		pokemonads = params[:pokemonad]
+  		new_pokemonad = Pokemonad.create(pokemonads) 
+  		redirect to('/map')
+	end
 end

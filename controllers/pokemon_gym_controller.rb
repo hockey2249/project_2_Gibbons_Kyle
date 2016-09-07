@@ -22,7 +22,6 @@ end
 post '/pokemons' do
   pokemon = params[:pokemon]
   new_pokemon = Pokemon.create(pokemon) 
-  p new_pokemon
   redirect to('/map')
 end
 
